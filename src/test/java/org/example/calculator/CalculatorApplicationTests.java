@@ -247,6 +247,7 @@ public class CalculatorApplicationTests {
     @Test
     public void testFactorialLargeNumber() {
         assertEquals(3628800, calc.factorial(10), 0.01);
+
     }
 
 
