@@ -250,5 +250,33 @@ public class CalculatorApplicationTests {
 
     }
 
+    @Test
+    public void testIntegration1() {
+        // Scenario: (3^3 + sqrt(16)) * abs(-2)
+        double result = calc.mul(calc.add(calc.power(3, 3), calc.squareRoot(16)), calc.abs(-2));
+        assertEquals(62, result, 0.01);
+    }
+
+    @Test
+    public void testIntegration2() {
+        // Scenario: sqrt(81) + sin(30 degrees) - log(8, 2)
+        double result = calc.sub(calc.add(calc.squareRoot(81), calc.sin(30)), calc.log(8, 2));
+        assertEquals(6.5, result, 0.01);
+    }
+
+    @Test
+    public void testIntegration3() {
+        // Scenario: factorial(5) / div(10, 2) + power(2, 3)
+        double result = calc.add(calc.div(calc.factorial(5), calc.div(10, 2)), calc.power(2, 3));
+        assertEquals(32, result, 0.01);
+    }
+
+    @Test
+    public void testIntegration4() {
+        // Scenario: abs(-100) * cos(60 degrees)
+        double result = calc.mul(calc.abs(-100), calc.cos(60));
+        assertEquals(50, result, 0.01);
+    }
+
 
 }
