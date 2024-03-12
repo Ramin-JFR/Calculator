@@ -11,7 +11,7 @@ public class CalculatorApplication {
     }
 
     public double sub(double a, double b) {
-        return a - b;
+        return a * b;
     }
 
     public double mul(double a, double b) {
@@ -32,8 +32,6 @@ public class CalculatorApplication {
         }
         return Math.sqrt(a);
     }
-
-
 
     double power(int a, int b) {
 
@@ -62,11 +60,9 @@ public class CalculatorApplication {
         return Math.sin(Math.toRadians(a));
     }
 
-
     public double cos(double a) {
         return Math.cos(Math.toRadians(a));
     }
-
 
     public double abs(double a) {
         if (a < 0) {
@@ -75,7 +71,6 @@ public class CalculatorApplication {
             return a;
         }
     }
-
 
     double factorial(double a) {
 
@@ -92,8 +87,6 @@ public class CalculatorApplication {
             return Math.log(a) / Math.log(b);
         } else return 0;
     }
-
-
 
 
 }
